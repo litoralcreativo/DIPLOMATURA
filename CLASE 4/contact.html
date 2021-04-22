@@ -34,23 +34,35 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="index.html"
-              >Home</a
-            >
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
             <a class="nav-link" href="about.html">About</a>
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link active" href="contact.html">Contact</a>
           </div>
         </div>
       </div>
     </nav>
-    <div class="container mt-5">
-      <h1>Este es mi sitio</h1>
-    </div>
-    <div class="container">
-      <h3 class="d-flex justify-content-center">Me gustan los gatitos</h3>
-      <a class="d-flex justify-content-center" href="">
-        <img src="https://placekitten.com/408/287" alt="" />
-      </a>
+    <div class="container justify-content-center mt-5">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="name@example.com"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label"
+          >Mensaje</label
+        >
+        <textarea
+          class="form-control"
+          id="exampleFormControlTextarea1"
+          rows="3"
+          placeholder="Escriba su mensaje aqui"
+        ></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary mb-3">Enviar</button>
     </div>
     <footer class="bg-purple fixed-bottom p-2">
       <div class="container d-flex justify-content-around">
