@@ -1,0 +1,5 @@
+Header: lo usamos para el titulo de la pagina (se usa uno solo)
+Sections: lo usamos para dividir la pagina en secciones (se pueden usar multiples)
+Article: seccion de articulo revista, producto específico, etc (se pueden usar multiples)
+Div: bloque de etiquetas en la pagina web (se pueden utilizar multiples)
+Footer: La ultima parte de la pagina (se usa uno solo)
