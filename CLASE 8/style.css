@@ -1,0 +1,59 @@
+#mainContainer {
+  height: 100vh;
+}
+
+#imageLogo img {
+  width: 400px;
+}
+
+#logoNavbar {
+  height: 55px;
+  opacity: 0.8;
+}
+
+h1 {
+  color: rgb(75, 76, 114);
+  padding: 0px 20px;
+  background-color: rgba(75, 76, 114, 0.2);
+}
+
+h2 {
+  color: rgb(84, 82, 102);
+}
+
+.bg-purple {
+  background-color: rgb(122, 119, 148);
+}
+
+.fab {
+  color: rgb(164, 161, 187);
+  transition: all 0.2s ease;
+}
+
+.fab:hover {
+  filter: brightness(2);
+  transform: scale(1.2);
+}
+
+.sectionContent {
+  padding: 20px;
+  border: solid rgb(75, 76, 114);
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+
+.sectionContent:hover {
+  background-color: rgba(75, 76, 114, 0.8);
+  color: white;
+}
+
+.sectionContent:hover h2 {
+  color: white;
+}
+
+#registrationForm {
+  background-color: rgba(75, 76, 114, 0.3);
+  border-radius: 20px;
+  padding: 50px;
+  width: 70%;
+}
