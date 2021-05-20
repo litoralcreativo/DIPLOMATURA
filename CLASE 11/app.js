@@ -21,6 +21,6 @@ JOIN          (muestra de otras tablas)
 Ejemplos:
 SELECT * FROM `users` WHERE id = 2
 SELECT * FROM `users` WHERE username LIKE "%on%"
-SELECT * FROM productos JOIN categorias ON productos.id_categoria = categorias.id 
+SELECT * FROM productos JOIN categorias ON productos.id_categoria = categorias.id
 
  */

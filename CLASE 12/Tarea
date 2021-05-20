@@ -1,0 +1,82 @@
+1)¿Cuales son los nombres y la ocupación de cada uno de los empleados?
+SELECT empleados.nombre, puestos.nombre AS puesto 
+FROM `empleados` 
+LEFT JOIN puestos 
+ON empleados.trabajo_id = puestos.id;
+
+2)¿Cuál es el nombre y la edad de cada uno de los empleados?
+SELECT nombre, edad 
+FROM `empleados`;
+
+3)¿Cuál es el nombre y la edad de todos los programadores?
+SELECT empleados.nombre, empleados.edad, puestos.nombre AS puesto 
+FROM `empleados` 
+JOIN puestos 
+ON empleados.trabajo_id = puestos.id 
+WHERE empleados.trabajo_id = 1 OR empleados.trabajo_id = 3;
+
+4)¿Cuáles son los empleados de mas de 30 años?
+SELECT apellido, edad 
+FROM `empleados` 
+WHERE edad > "30";
+
+5)¿Cuál es el apellido y el mail de los empleados llamados Juan?
+SELECT apellido, mail 
+FROM `empleados` 
+WHERE nombre = "Juan";
+
+6)¿Cuál es el nombre de las personas que trabajan como Programadores oDesarrolladores Web?
+SELECT empleados.nombre, puestos.nombre AS puesto 
+FROM `empleados` 
+JOIN puestos 
+ON empleados.trabajo_id = puestos.id 
+WHERE empleados.trabajo_id = 1 OR empleados.trabajo_id = 2 OR empleados.trabajo_id = 3;
+
+7)Mostrar una lista (nro_emp, nombre, apellido, trabajo) las personas cuyo numero de empleado esté entre 15 y 20
+SELECT empleados.id, empleados.nombre, empleados.apellido, puestos.nombre AS puesto 
+FROM `empleados` 
+JOIN puestos 
+ON empleados.trabajo_id = puestos.id 
+WHERE empleados.id BETWEEN 15 AND 20;
+
+8)¿Cuáles son los Programadores que ganan menos de $800?
+SELECT empleados.nombre, empleados.apellido, empleados.salario, puestos.nombre AS puesto 
+FROM `empleados` 
+JOIN puestos 
+ON empleados.trabajo_id = puestos.id 
+WHERE (empleados.trabajo_id = 1 || empleados.trabajo_id = 3) 
+AND (empleados.salario < 800);
+
+9)¿Cuáles son los Programadores que ganan entre $750 y  $900?
+SELECT empleados.nombre, empleados.apellido, empleados.salario, puestos.nombre AS puesto 
+FROM `empleados` 
+JOIN puestos 
+ON empleados.trabajo_id = puestos.id 
+WHERE (empleados.trabajo_id = 1 || empleados.trabajo_id = 3) 
+AND (empleados.salario BETWEEN 750 AND 900);
+
+10) ¿Cuáles son los trabajadores cuyo apellido comienza con s?
+SELECT *
+FROM `empleados` 
+WHERE apellido LIKE "s%";
+
+11)¿Cuáles son los trabajadores cuyo nombre termina en l?
+SELECT *
+FROM `empleados` 
+WHERE nombre LIKE "%l";
+
+12)Agregar un empleado con ID_empleado 22 con los siguientes datos: Francisco Perez,  Programador, 26 años, salario 900, mail: francisco@bignet.com
+INSERT INTO `empleados` (nombre, apellido, trabajo_id, edad, salario, mail)
+VALUES ("Francisco", "Perez", 3, 26, 900, "francisco@bignet.com");
+
+13)Borrar los datos de Hernar Rosso
+UPDATE empleados
+SET eliminado = 1
+WHERE nombre = "Hernan" AND apellido = "Rosso";
+
+14)Modificar los datos de Daniel Gutierrez, salario 900.
+UPDATE empleados
+SET salario = 900
+WHERE nombre = "Daniel" AND apellido = "Gutierrez";
+
+
