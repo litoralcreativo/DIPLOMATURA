@@ -1,0 +1,59 @@
+Arrancamos NodeJS
+
+Comandos:
+/> node -v (para ver la version de NodeJs)
+
+/> npm -v (para ver la version de Node Package Manager)
+
+/> npm i express -g (i es de "instalar" y -g es de "global", osea que instalamos el paquete express de manera global en nuestra pc)
+
+/> npm i express-generator -g (installa express-generator, crea estructura minima de carpetas para un proyecto)
+
+/> npm i nodemon -g (instala nodemon, ejecuta la pagina en tiempo "real")
+
+/> express PROYECTO --hbs (crea un proyecto con express del tipo handelbars llamado "PROYECTO")
+
+/> npm start (corre la app en el puerto especificado en ./bin/www)
+
+/> nodemon npm start (corre la app y la refresca cuando hay cambios)
+
+
+
+
+
+Vamos a utilizar el patron de DISEÑO: MVC (Modelo Vista Controlador)
+
+M: (Consultas a la base de datos y su conección)
+V: (Html/Hbs es lo que ve el usuari)
+C: (A que url le vamos a pegar, en que ruta estoy parado, conección de bs de con el modelo y coneccion del modelo con las vistas)
+
+/routes     ->    Controlador
+/views      ->    Vistas
+
+
+router.get("/", function (req, res) {
+});
+
+req         ->    request (todo lo que llega a la servidor desde la vista)
+res         ->    respond (todo lo que llega a la vista desde el servidor)
+res.render  ->    renderiza una vista
+res.JSON    ->    muestra un JSON
+res.send    ->    envia un mensaje
+res.end     ->    cierra la comunicación
+
+
+SPA: Single Page Application
+
+
+CLONAR REPO DE GITHUB:
+
+1) Accedo al link del repo (https://github.com/litoralcreativo/mcm.git)
+2) Entro a la carpeta donde quiero clonar el repo
+3) Entro el comando: git clone https://github.com/litoralcreativo/mcm.git
+
+// para tener el repo cloneado al dia hay que pullearlo..
+
+1) Me paro en la carpeta del repo cloneado
+2) me conecto a git con estas lineas:
+        - git init
+        - git remote add origin LINK (ex: https://github.com/litoralcreativo/mcm.git)
