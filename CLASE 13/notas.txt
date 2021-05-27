@@ -54,6 +54,6 @@ CLONAR REPO DE GITHUB:
 // para tener el repo cloneado al dia hay que pullearlo..
 
 1) Me paro en la carpeta del repo cloneado
-2) me conecto a git con estas lineas:
+2) me conecto a git con estas lineas (UNA SOLA VEZ):
         - git init
         - git remote add origin LINK (ex: https://github.com/litoralcreativo/mcm.git)
