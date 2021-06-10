@@ -57,3 +57,5 @@ CLONAR REPO DE GITHUB:
 2) me conecto a git con estas lineas (UNA SOLA VEZ):
         - git init
         - git remote add origin LINK (ex: https://github.com/litoralcreativo/mcm.git)
+
+

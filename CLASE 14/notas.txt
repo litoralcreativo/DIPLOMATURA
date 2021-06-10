@@ -1,0 +1,30 @@
+Metodos HTTP:
+
+GET: (me trae info del server y va al html)
+POST: (le mando info al server, create) -> que voy a agregar..
+PUT: (le mando info al server, update) -> que voy a agregar y donde.. 
+
+
+
+Envio de datos del cliente al server: req(lo que llega al server de nuestro html)
+forms se llama a los datos del form por un objeto que se llama "body" --> lo llamamos con POST y PUT
+
+
+FORMAS DE PASAR DATOS POR EL URL (se pasa todo por req):
+        - params: me pasa parametros como direcion URL. Ej.: ../users/1
+        - queryString: me pasa los nombres de las variables en la URL y les da un valor. Ej.: /users?edad=20&&nombre='jon'
+
+Para el envio de mails usamos el protocolo SingleMailTransferProtocol (SMTP)
+
+npm i nodemailer
+
+carpeta services: archivos que implican varios modelos,los puedo llamar en diferentes partes de mi aplicación ex: mail lo llamo para verificar el correo, cambiar la contraseña, verificacion en dos pasos, etc.
+
+
+
+Conexion a nuestra BDD
+
+npm i mysql     ---> conectarnos a nuestra bdd y realizar consultas planas (no admite promesas)
+npm i util      ---> me convierte cualquier objeto en promesa
+
+MODELOS ====> se relacion con la BDD
